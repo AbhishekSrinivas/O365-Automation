@@ -9,8 +9,8 @@ PowerShell snippets and notes for common Microsoft 365 / Exchange Online adminis
 | `scripts/Get-Distribution-Group-Members.ps1` | List members of distribution groups |
 | `scripts/Export-Groups-and-Members.ps1` | Export all groups and their members |
 | `scripts/Delete-Mailbox-Contents.ps1` | Remove mailbox contents (destructive, use with care) |
-| `notes/` | Command notes for bulk group membership and exports |
-| `docs/` | How-to and an example mail migration plan |
+| `guides/` | How-tos and command notes for group membership and exports |
+| `migration/` | Example mail migration plan |
 
 ## Usage
 
