@@ -1,0 +1,20 @@
+#Import Office 365 Group members from CSV File
+
+#Get Credentials to connect
+$Credential = Get-Credential
+  
+#Create the session
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ `
+           -Credential $Credential -Authentication Basic -AllowRedirection
+  
+#Import the session
+Import-PSSession $Session -DisableNameChecking -AllowClobber
+ 
+#PowerShell to Import Members to office 365 group from CSV
+Import-CSV "D:\groupaddusers.csv" | ForEach-Object {
+    Add-UnifiedGroupLinks –Identity $_.GroupID –LinkType Members –Links $_.Member
+    Write-host -f Green "Added Member '$($_.Member)' to Office 365 Group '$($_.GroupID)'"
+}
+ 
+#Remove the session
+Remove-PSSession $Session
