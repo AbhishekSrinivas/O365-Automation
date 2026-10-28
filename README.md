@@ -2,17 +2,15 @@
 
 PowerShell snippets and notes for common Microsoft 365 / Exchange Online administration tasks.
 
-## Contents
+## Layout
 
-| File | Purpose |
+| Path | Contents |
 |---|---|
-| `Get-DistributionGroupMembers.ps1` | List members of distribution groups |
-| `Office 365 - Export Groups and Members.ps1` | Export all groups and their members |
-| `Office 365 - Delete Mailbox Contents.ps1` | Remove mailbox contents (destructive, use with care) |
-| `Add Users to Groups in O365.txt` | Notes on bulk group membership |
-| `Script to export users and groups for O365.txt` | Export notes |
-| `How to Save All Distribution List Members In txt File.docx` | How-to |
-| `Mail Migration Plan Document.docx` | Example migration plan template |
+| `scripts/Get-Distribution-Group-Members.ps1` | List members of distribution groups |
+| `scripts/Export-Groups-and-Members.ps1` | Export all groups and their members |
+| `scripts/Delete-Mailbox-Contents.ps1` | Remove mailbox contents (destructive, use with care) |
+| `notes/` | Command notes for bulk group membership and exports |
+| `docs/` | How-to and an example mail migration plan |
 
 ## Usage
 
